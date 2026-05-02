@@ -249,7 +249,7 @@ local Toggle = Tab:CreateToggle({
 })
 
 
-local Label = Tab:CreateLabel("Sadly Xsaw and Ammo has been patched and removed aimbot due to not working", "cloud-hail")
+
 
 local Divider = Tab:CreateDivider()
 
@@ -323,7 +323,7 @@ local Toggle = Tab:CreateToggle({
 	Flag = "Toggle1", 
 	Callback = function(Value)
 		while true do
-			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(4, 4, 4)
+			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(10, 10, 10)
 			workspace.Misc.AI.CHAIN.Torso.CanCollide = false
 			workspace.Misc.AI.CHAIN.Torso.Transparency = 0.7
 			workspace.Misc.AI.CHAIN.Torso.BrickColor = BrickColor.new("Neon Red")
