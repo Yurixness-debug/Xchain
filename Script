@@ -323,7 +323,7 @@ local Toggle = Tab:CreateToggle({
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while true do
-			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(10, 10, 10)
+			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(2, 2, 2)
 			workspace.Misc.AI.CHAIN.Torso.CanCollide = false
 			workspace.Misc.AI.CHAIN.Torso.Transparency = 0.7
 			workspace.Misc.AI.CHAIN.Torso.BrickColor = BrickColor.new("Neon Red")
