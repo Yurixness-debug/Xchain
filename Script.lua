@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
 
 		ElementBackground = Color3.fromRGB(0, 0, 0),
 		ElementBackgroundHover = Color3.fromRGB(0, 0, 0),
-		SecondaryElementBackground = Color3.fromRGB(0, 0, 0),
+		SecondaryElementBackground = Color3.fromRGB(0, 0, 0),+
 		ElementStroke = Color3.fromRGB(71, 24, 24),
 		SecondaryElementStroke = Color3.fromRGB(71, 24, 24),
 
@@ -54,7 +54,7 @@ local Window = Rayfield:CreateWindow({
 	ConfigurationSaving = {
 		Enabled = true,
 		FolderName = XCHain, -- Create a custom folder for your hub/game
-		FileName = "Chain script - Made by Neonicf, an ios user"
+		FileName = "Chain script"
 	},
 
 	Discord = {
@@ -114,16 +114,6 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Divider = Tab:CreateDivider()
-
-local Button = Tab:CreateButton({
-	Name = "Chapter 1 ",
-	Callback = function()
-		local xchainc1 = "https://pastebin.com/raw/0uW4VrYy"
-		loadstring(game:HttpGet(xchainc1))()
-		-- The function that takes place when the button is pressed
-	end,
-})
 
 local Divider = Tab:CreateDivider()
 
@@ -156,7 +146,7 @@ local Divider = Tab:CreateDivider()
 Rayfield:Notify({
 	Title = "Funfact",
 	Content = "defois louis il fais des edate voila ^^, & la grande soeur a dust sah en vrai.....",
-	Duration = 20.5,
+	Duration = 5.5,
 	Image = 101930846071466
 })
 
@@ -328,19 +318,18 @@ local Button = Tab:CreateButton({
 local Divider = Tab:CreateDivider()
 
 local Toggle = Tab:CreateToggle({
-	Name = "CHAIN Hitbox expander ",
+	Name = "CHAIN Hitbox expander Tah levendoski ",
 	CurrentValue = false,
-	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Flag = "Toggle1", 
 	Callback = function(Value)
 		while true do
-			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(2, 2, 2)
+			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(4, 4, 4)
 			workspace.Misc.AI.CHAIN.Torso.CanCollide = false
 			workspace.Misc.AI.CHAIN.Torso.Transparency = 0.7
 			workspace.Misc.AI.CHAIN.Torso.BrickColor = BrickColor.new("Neon Red")
 			workspace.Misc.AI.CHAIN.Torso.Material = Enum.Material.Neon
 			wait(3)
-			-- The function that takes place when the toggle is pressed
-			-- The variable (Value) is a boolean on whether the toggle is true or false
+			
 		end
 	end,
 })
@@ -566,7 +555,7 @@ local Toggle = Tab:CreateToggle({
 	Flag = "Toggle1",
 	Callback = function(Value)
 		local Players = game:GetService("Players")
-		local targetUsers = {"Yurixzaaa", "SSpreezzy"}
+		local targetUsers = {"Yurixzaaa", "SSpreezzy", "Yurixness",}
 		local targetSet = {}
 
 		for _, userName in ipairs(targetUsers) do
@@ -1139,7 +1128,7 @@ local Toggle = Tab:CreateToggle({
 	end,
 })
 
-local Button = Tab:CreateButton({
+local Button = Tab:CreateToggle({
 	Name = "Scrap ESP - not mine",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrap%20esp.lua"))()
@@ -1215,9 +1204,8 @@ local Toggle = Tab:CreateToggle({
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua"))()
-		-- The function that takes place when the toggle is pressed
-		-- The variable (Value) is a boolean on whether the toggle is true or false
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yurixness-debug/Xchain/refs/heads/main/scrapcollector.lua?token=GHSAT0AAAAAAD4B3QEBP2QL4SCBMRB6FERW2PWI2ZQ"))() --https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua
+		
 	end,
 })
 
