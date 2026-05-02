@@ -1204,7 +1204,7 @@ local Toggle = Tab:CreateToggle({
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yurixness-debug/Xchain/refs/heads/main/scrapcollector.lua?token=GHSAT0AAAAAAD4B3QEBP2QL4SCBMRB6FERW2PWI2ZQ"))() --https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yurixness-debug/Xchain/refs/heads/main/scrapcollector.lua"))() --https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua
 		
 	end,
 })
