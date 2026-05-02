@@ -318,12 +318,12 @@ local Button = Tab:CreateButton({
 local Divider = Tab:CreateDivider()
 
 local Toggle = Tab:CreateToggle({
-	Name = "CHAIN Hitbox expander ",
+	Name = "CHAIN Hitbox expander tahlevendoski",
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
 		while true do
-			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(2, 2, 2)
+			workspace.Misc.AI.CHAIN.Torso.Size = Vector3.new(10, 10, 10)
 			workspace.Misc.AI.CHAIN.Torso.CanCollide = false
 			workspace.Misc.AI.CHAIN.Torso.Transparency = 0.7
 			workspace.Misc.AI.CHAIN.Torso.BrickColor = BrickColor.new("Neon Red")
@@ -556,7 +556,7 @@ local Toggle = Tab:CreateToggle({
 	Flag = "Toggle1",
 	Callback = function(Value)
 		local Players = game:GetService("Players")
-		local targetUsers = {"Yurixzaaa", "SSpreezzy"}
+		local targetUsers = {"Yurixzaaa", "SSpreezzy", "Yurixness"}
 		local targetSet = {}
 
 		for _, userName in ipairs(targetUsers) do
@@ -1201,11 +1201,11 @@ local Toggle = Tab:CreateToggle({
 local Tab = Window:CreateTab("AutoFarm", "feather") -- Title, Image
 
 local Toggle = Tab:CreateToggle({
-	Name = "Auto collect Scrap",
+	Name = "Auto collect Scrap dont work you get kick",
 	CurrentValue = false,
 	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Yurixness-debug/Xchain/refs/heads/main/scrapcollector"))() --https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua
 		-- The function that takes place when the toggle is pressed
 		-- The variable (Value) is a boolean on whether the toggle is true or false
 	end,
